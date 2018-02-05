@@ -1,0 +1,34 @@
+
+# create new user
+./users.py add --first_name user1 --last_name user1 --birthday 10/10/2010
+
+# update user by pk
+./users.py update --pk 5a787251af77c439f61b5098 --birthday 10/11/2010
+
+# list all users
+./users.py list
+
+# info about specific user
+./users.py list --pk 5a787251af77c439f61b5098
+
+# remove user
+./users.py  del --pk 5a787251af77c439f61b5098
+
+# list all pets of specific user
+./users.py  list_pets --pk 5a78730daf77c43a5724aca9
+
+# list all users with their pets (sorted by user how has the most number of pets )
+./users.py top
+
+
+# create new cat
+./pets.py add  --type cat --name cat  --birthday 10/10/2010 --owner 5a787251af77c439f61b5098
+
+# update pet by pk
+./pets.py update --pk 5a7873a5af77c43a833b6975 --birthday 10/20/2010
+
+# list all pets with their owner
+./pets.py list
+
+# remove pet by pk
+./pets.py del --pk 5a78731baf77c43a5dea7b9c
